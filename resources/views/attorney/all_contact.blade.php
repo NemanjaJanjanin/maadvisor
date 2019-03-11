@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('other_css')
-<link href="{{ asset('resources/assets/admin_assets/admin/') }}/attorney_all.css" rel="stylesheet" type="text/css" />
+<link href="{{ asset('resources/assets/admin_assets/admin/') }}/all_contact.css" rel="stylesheet" type="text/css" />
 @stop
 
 @section('content')
@@ -11,7 +11,7 @@
     <div class="m-subheader ">
         <div class="d-flex align-items-center">
             <div class="mr-auto">
-                <h3 class="m-subheader__title m-subheader__title--separator">All Data</h3>
+                <h3 class="m-subheader__title m-subheader__title--separator">All Contact Data</h3>
                 <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                     <li class="m-nav__item m-nav__item--home">
                         <a href="{{ url('home') }}" class="m-nav__link m-nav__link--icon">
@@ -21,7 +21,7 @@
                     <li class="m-nav__separator">-</li>
                     <li class="m-nav__item">
                         <a href="{{ url('search_all') }}" class="m-nav__link">
-                            <span class="m-nav__link-text">All Data</span>
+                            <span class="m-nav__link-text">All Contact Data</span>
                         </a>
                     </li>
                 </ul>
@@ -40,12 +40,6 @@
                                     <ul class="m-nav">
                                         <li class="m-nav__section m-nav__section--first m--hide">
                                             <span class="m-nav__section-text">Quick Actions</span>
-                                        </li>
-                                        <li class="m-nav__item">
-                                            <a href="{{ url('/attorney_profile') }}" class="m-nav__link">
-                                                <i class="m-nav__link-icon flaticon-add"></i>
-                                                <span class="m-nav__link-text">Add New Record</span>
-                                            </a>
                                         </li>
                                         <li class="m-nav__item">
                                             <a href="#" class="m-nav__link">
@@ -70,7 +64,7 @@
                 <div class="m-portlet__head-caption">
                     <div class="m-portlet__head-title">
                         <h3 class="m-portlet__head-text">
-                            Attorney Data
+                            Contact Data
                         </h3>
                     </div>
                 </div>
@@ -104,28 +98,8 @@
                                             <span class="m-form__help"></span>
                 						</div>
                                         <div class="col-lg-3">
-                							<label>Suffix:</label>
-                							<input type="text" class="form-control m-input" name="suffix">
-                                            <span class="m-form__help"></span>
-                						</div>
-                                        <div class="col-lg-3">
-                							<label>First Name:</label>
-                							<input type="text" class="form-control m-input" name="first_name">
-                                            <span class="m-form__help"></span>
-                						</div>
-                                        <div class="col-lg-3">
-                							<label>Middle Name:</label>
-                							<input type="text" class="form-control m-input" name="middle_name">
-                                            <span class="m-form__help"></span>
-                						</div>
-                                        <div class="col-lg-3">
-                							<label>Last Name:</label>
-                							<input type="text" class="form-control m-input" name="last_name">
-                                            <span class="m-form__help"></span>
-                						</div>
-                                        <div class="col-lg-3">
-                							<label>Suffix:</label>
-                							<input type="text" class="form-control m-input" name="suffix">
+                							<label>Email:</label>
+                							<input type="text" class="form-control m-input" name="email">
                                             <span class="m-form__help"></span>
                 						</div>
                 					</div>
@@ -169,79 +143,91 @@
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="4" checked> Suffix
+							<input type="checkbox" class="toggle-vis" data-column="4" checked> Email Address
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="5" checked> Email
+							<input type="checkbox" class="toggle-vis" data-column="5" checked> Date of Birth
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="6" checked> Address 1
+							<input type="checkbox" class="toggle-vis" data-column="6" checked> Company Name
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="7" checked> Address 2
+							<input type="checkbox" class="toggle-vis" data-column="7" checked> Title
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="8" checked> Address 3
+							<input type="checkbox" class="toggle-vis" data-column="8" checked> Mobile Phone
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="9" checked> City
+							<input type="checkbox" class="toggle-vis" data-column="9" checked> Work Phone
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="10" checked> State
+							<input type="checkbox" class="toggle-vis" data-column="10" checked> Other Phone
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="11" checked> County
+							<input type="checkbox" class="toggle-vis" data-column="11" checked> Address
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="12" checked> Country
+							<input type="checkbox" class="toggle-vis" data-column="12" checked> Address1
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="13" checked> District
+							<input type="checkbox" class="toggle-vis" data-column="13" checked> City
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="14" checked> Zip Code
+							<input type="checkbox" class="toggle-vis" data-column="14" checked> State
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="15" checked> Phone
+							<input type="checkbox" class="toggle-vis" data-column="15" checked> Zip
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="16" checked> Fax
+							<input type="checkbox" class="toggle-vis" data-column="16" checked> Province
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="17" checked> Website
+							<input type="checkbox" class="toggle-vis" data-column="17" checked> Country
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="18" checked> Business Name
+							<input type="checkbox" class="toggle-vis" data-column="18" checked> Region
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="19" checked> Business Phone
+							<input type="checkbox" class="toggle-vis" data-column="19" checked> Website
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="20" checked> Member Status
+							<input type="checkbox" class="toggle-vis" data-column="20" checked> Twitter
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="21" checked> Bar Number
+							<input type="checkbox" class="toggle-vis" data-column="21" checked> Linkedin
 							<span></span>
 							</label>
                             <label class="m-checkbox">
-							<input type="checkbox" class="toggle-vis" data-column="22" checked> Practice Area
+							<input type="checkbox" class="toggle-vis" data-column="22" checked> Facebook
+							<span></span>
+							</label>
+                            <label class="m-checkbox">
+							<input type="checkbox" class="toggle-vis" data-column="23" checked> Whatsapp
+							<span></span>
+							</label>
+                            <label class="m-checkbox">
+							<input type="checkbox" class="toggle-vis" data-column="24" checked> Opted in
+							<span></span>
+							</label>
+                            <label class="m-checkbox">
+							<input type="checkbox" class="toggle-vis" data-column="25" checked> Opted out
 							<span></span>
 							</label>
 						</div>
@@ -255,25 +241,28 @@
                             <th>First Name</th>
                             <th>Middle Name</th>
                             <th>Last Name</th>
-                            <th>Suffix</th>
-                            <th>Email</th>
-                            <th>Address 1</th>
-                            <th>Address 2</th>
-                            <th>Address 3</th>
+                            <th>Email Address</th>
+                            <th>Date of Birth</th>
+                            <th>Company Name</th>
+                            <th>Title</th>
+                            <th>Mobile Phone</th>
+                            <th>Work Phone</th>
+                            <th>Other Phone</th>
+                            <th>Address</th>
+                            <th>Address1</th>
                             <th>City</th>
                             <th>State</th>
-                            <th>County</th>
+                            <th>Zip</th>
+                            <th>Province</th>
                             <th>Country</th>
-                            <th>District</th>
-                            <th>Zip Code</th>
-                            <th>Phone</th>
-                            <th>Fax</th>
+                            <th>Region</th>
                             <th>Website</th>
-                            <th>Business Name</th>
-                            <th>Business Phone</th>
-                            <th>Member Status</th>
-                            <th>Bar Number</th>
-                            <th>Practice Area</th>
+                            <th>Twitter</th>
+                            <th>Linkedin</th>
+                            <th>Facebook</th>
+                            <th>Whatsapp</th>
+                            <th>Opted in</th>
+                            <th>Opted out</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -283,25 +272,28 @@
                             <th>First Name</th>
                             <th>Middle Name</th>
                             <th>Last Name</th>
-                            <th>Suffix</th>
-                            <th>Email</th>
-                            <th>Address 1</th>
-                            <th>Address 2</th>
-                            <th>Address 3</th>
+                            <th>Email Address</th>
+                            <th>Date of Birth</th>
+                            <th>Company Name</th>
+                            <th>Title</th>
+                            <th>Mobile Phone</th>
+                            <th>Work Phone</th>
+                            <th>Other Phone</th>
+                            <th>Address</th>
+                            <th>Address1</th>
                             <th>City</th>
                             <th>State</th>
-                            <th>County</th>
+                            <th>Zip</th>
+                            <th>Province</th>
                             <th>Country</th>
-                            <th>District</th>
-                            <th>Zip Code</th>
-                            <th>Phone</th>
-                            <th>Fax</th>
+                            <th>Region</th>
                             <th>Website</th>
-                            <th>Business Name</th>
-                            <th>Business Phone</th>
-                            <th>Member Status</th>
-                            <th>Bar Number</th>
-                            <th>Practice Area</th>
+                            <th>Twitter</th>
+                            <th>Linkedin</th>
+                            <th>Facebook</th>
+                            <th>Whatsapp</th>
+                            <th>Opted in</th>
+                            <th>Opted out</th>
                             <th>Actions</th>
                         </tr>
                     </tfoot>
@@ -316,7 +308,7 @@
 
 @section('other_js')
 <script src="{{ asset('resources/assets/admin_assets/') }}/vendors/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
-<script src="{{ asset('resources/assets/js/admin/attorney/') }}/search-all.js" type="text/javascript"></script>
+<script src="{{ asset('resources/assets/js/admin/contact/') }}/search-all.js" type="text/javascript"></script>
 <script>
 $(document).ready(function() {
     var table = $('#m_table_1').DataTable();

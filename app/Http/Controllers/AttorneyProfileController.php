@@ -19,7 +19,7 @@ use Closure;
 use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Route;
-use App\Attorney;
+use App\Contact;
 
 
 

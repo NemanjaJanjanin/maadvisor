@@ -19,41 +19,44 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 			processing: true,
 			serverSide: true,
 			ajax: {
-				url: 'http://localhost/lbm/api/get_attorny_dataset',
-				// url: 'https://legalbranddata.com/api/get_attorny_dataset',
+				url: 'http://localhost/maadvisor/api/get_contact_data',
+				// url: 'https://maadvisor.net/api/get_contact_data',
 				headers: {'X-LBM': '2*2wr)<w2Us#MaZ.'},
 				type: 'POST',
 			},
 			columns: [
-				{data: 'id'},
-				{data: 'first_name'},
-				{data: 'middle_name'},
-				{data: 'last_name'},
-				{data: 'suffix'},
-				{data: 'email'},
-				{data: 'address1'},
-				{data: 'address2'},
-				{data: 'address3'},
-				{data: 'city'},
-				{data: 'state'},
-				{data: 'county'},
-				{data: 'country'},
-				{data: 'district'},
-				{data: 'zipcode'},
-				{data: 'phone'},
-				{data: 'fax'},
-				{data: 'website'},
-				{data: 'business_name'},
-				{data: 'business_phone'},
-				{data: 'member_status'},
-				{data: 'bar_number'},
-				{data: 'practice_area'},
-				{data: 'actions'},
+				{data : 'id'},
+				{data : 'first_name'},
+				{data : 'middle_name'},
+				{data : 'last_name'},
+				{data : 'email_address'},
+				{data : 'date_of_birth'},
+				{data : 'company_name'},
+				{data : 'title'},
+				{data : 'mobile_phone'},
+				{data : 'work_phone'},
+				{data : 'other_phone'},
+				{data : 'address'},
+				{data : 'address1'},
+				{data : 'city'},
+				{data : 'state'},
+				{data : 'zip'},
+				{data : 'province'},
+				{data : 'country'},
+				{data : 'region'},
+				{data : 'website'},
+				{data : 'twitter'},
+				{data : 'linkedin'},
+				{data : 'facebook'},
+				{data : 'whatsapp'},
+				{data : 'opted_in'},
+				{data : 'opted_out'},
+				{data : 'actions'}
 			],
 			columnDefs: [
 				{
 					targets: -1,
-					title: 'actions',
+					title: 'Actions',
 					orderable: false,
 					render: function(data, type, full, meta) {
 						// return `
@@ -61,7 +64,7 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
                         //   <i class="la la-edit"></i>
                         // </a>`;
 						return `
-                        <a href="http://localhost/lbm/attorney_profile/` + data + `" class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill" title="View / Edit" target="_blank">
+                        <a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill" title="View / Edit" target="_blank">
                           <i class="la la-edit"></i>
                         </a>`;
 					},

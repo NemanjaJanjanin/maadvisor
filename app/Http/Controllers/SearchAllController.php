@@ -42,7 +42,7 @@ class SearchAllController extends BaseController
      */
     public function index()
     {
-        return view('attorney/search_all');
+        return view('attorney/all_contact');
     }
 
 }
