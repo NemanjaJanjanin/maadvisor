@@ -1,0 +1,29 @@
+.profile_pic{
+    height: 300px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    margin: 10px 10px;
+}
+
+.user_profile .profile_details span ul li {
+    list-style-type: none;
+    border: none;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 5px
+}
+
+.user_profile .profile_details span ul{
+    border: none;
+}
+
+.social-icons{
+    margin: 10px 10px
+}
+
+
+#evolve_gallery_app_list_length, #evolve_gallery_app_list_filter, #evolve_gallery_app_list_info{
+    display: none;
+}

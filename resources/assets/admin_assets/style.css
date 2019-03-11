@@ -1,0 +1,463 @@
+.tabel_filetr {
+    width: 100%;
+    float: left;
+    padding: 0px 0px 15px;
+}
+.tabel_filetr h1.page-title {
+    float: left;
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 13px 0;
+}
+.tabel_filetr form {
+    float: right;
+}
+.tabel_filetr form span.filte_title {
+    float: left;
+    font-size: 13px;
+    padding: 10px 0;
+}
+.tabel_filetr form .form-group {
+    width: 80px;
+    float: left;
+    padding-left: 10px;
+    margin: 0;
+}
+.tabel_filetr form .form-group .form-control {
+    border: solid 1px #ddd;
+    padding: 2px 5px;
+    height: auto;
+    font-size: 13px;
+}
+.tabel_filetr form button {
+    background: #32c5d2;
+    border: 0;
+    color: #fff;
+    padding: 5px 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+.tabel_filetr form .form-group label {
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 5px;
+}
+.user_profile .profile_pic {
+    padding: 10px;
+}
+.user_profile .profile_pic img {
+    width: 100%;
+}
+.user_profile h1.page-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px;
+}
+.user_profile .profile_details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 10px 10px;
+    color: #2a8580;
+}
+.user_profile .profile_details h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 10px 10px;
+    color: #2a8580;
+}
+.user_profile {
+    border: solid 1px #ddd;
+}
+.user_profile form {
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+}
+.user_profile form input.form-control {
+    width: 71%;
+    float: left;
+    font-size: 13px;
+}
+.user_profile form button {
+    background: #32c5d2;
+    border: 0;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 20px;
+    margin-left: 5px;
+    float: left;
+}
+.user_profile .profile_details ul {
+    margin: 0;
+    padding: 0;
+    border-top: solid 1px #ddd;
+}
+.user_profile .profile_details ul li {
+    list-style-type: none;
+    border-bottom: solid 1px #ddd;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.user_profile .profile_details ul li select.form-control {
+    border: 0;
+    background: #2a8580;
+    color: #fff;
+    font-weight: 600;
+    height: auto;
+    padding: 3px 5px;
+}
+.user_profile .profile_details ul li span {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.user_profile .profile_details ul li strong {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    color: #2a8580;
+    font-weight: 600;
+}
+.user_profile .profile_details .editable {
+    padding: 10px;
+}
+.user_profile .profile_details .editable button {
+    background: #e8ecf0;
+    border: 0;
+    color: #000;
+    padding: 7px 10px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 2px 5px;
+}
+.user_profile .profile_details .more_info p {
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+    padding: 0px 10px 10px;
+    margin: 0;
+}
+.user_profile .profile_details .more_info a {
+    display: inline-block;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+.user_profile .music_img {
+    padding: 10px;
+}
+.user_profile .music_img img {
+    width: 100%;
+}
+.head_btn {
+    padding: 10px 0;
+    width: 58%;
+    float: left;
+}
+.head_btn ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    float: right;
+}
+.head_btn ul li {
+    display: inline-block;
+}
+.head_btn ul li a {
+    display: block;
+    border: solid 1px #fff;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.head_btn ul li a:hover,.head_btn ul li a:focus {
+    background: #32c5d2;
+}
+.head_btn h2 {
+    float: left;
+    margin: 0;
+    color: #36c6d3;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.select2-container{
+    width: 100% !important;
+}
+
+.user_profile .profile_details .editable a {
+    background: #e8ecf0;
+    border: 0;
+    color: #000;
+    padding: 7px 10px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 2px 5px;
+}
+
+.tabel_filetr form a {
+    background: #32c5d2;
+    border: 0;
+    color: #fff;
+    padding: 5px 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+.user_profile form a {
+    background: #32c5d2;
+    border: 0;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 20px;
+    margin-left: 5px;
+    float: left;
+}
+
+/*.table-list{
+    min-height: 700px !important;
+}*/
+
+
+#loadingDiv {
+    position:absolute;;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /*background-color:#000;*/
+    /*background-color: #36c6d3;*/
+    background: rgba(255, 255, 255, 0.89);
+        z-index: 9999999;
+            padding: 15%;
+}
+#loadingDiv img{
+    /*width: 100%;
+    height: 100%;*/
+        border: 1px solid #ccc;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+}
+#btnUpdateRow {
+    background: #32c5d2;
+    border: 0;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 15px;
+    margin-left: 5px;
+    float: right;
+}
+
+/* archived */
+.app_status_color0{
+    background-color: #AEAEAE;
+    color: white;
+}
+/* submitted */
+.app_status_color1{
+    background-color: #FFC905;
+}
+/* in review */
+.app_status_color2{
+    background-color: #F6821F;
+    color: white;
+}
+
+/* Pending */
+.app_status_color3{
+    background-color: #F6821F;
+    color: white;
+}
+
+/* Email */
+.app_status_color4{
+    background-color: #C81B1D;
+    color: white;
+}
+/* shortlisted */
+.app_status_color5{
+    background-color: #E535A4;
+    color: white;
+}
+/* in discussion */
+.app_status_color6{
+    background-color: #9C16CB;
+    color: white;
+}
+/* Unsuccessful */
+.app_status_color7{
+    background-color: #1C18C5;
+    color: white;
+}
+/* successful */
+.app_status_color8{
+    background-color: #44AFDD;
+    color: white;
+}
+/* announced */
+.app_status_color9{
+    background-color: #97D74D;
+}
+
+/* work for tickete status color
+/* archived */
+.ticket_status_color0{
+    background-color: #AEAEAE;
+    color: white;
+}
+/* submitted */
+.ticket_status_color1{
+    background-color: #FFC905;
+}
+/* Email */
+.ticket_status_color2{
+    background-color: #C81B1D;
+    color: white;
+}
+
+/* Waiting List */
+.ticket_status_color3{
+    background-color: #E535A4;
+    color: white;
+}
+
+/* Unsuccessful */
+.ticket_status_color4{
+    background-color: #1C18C5;
+    color: white;
+}
+/* Passed In */
+.ticket_status_color5{
+    background-color: #1C18C5;
+    color: white;
+}
+/* Successful - awaiting */
+.ticket_status_color6{
+    background-color: #44AFDD;
+    color: white;
+}
+/* Sucessful - confirmed */
+.ticket_status_color7{
+    background-color: #97D74D;
+    color: white;
+}
+
+.lading_modal {
+    display:    none;
+    position:   fixed;
+    z-index:    10000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, .1 );
+}
+
+.lading_modal .centered {
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -150px;
+    border-radius: 20px;
+}
+
+body.loading .lading_modal {
+    overflow: hidden;
+}
+body.loading .lading_modal {
+    display: block;
+}
+
+.app-photo{
+    width: 50%;
+    height: 200px;
+    padding-top: 5px;
+}
+.app-photo a{
+    width: 100% !important;
+    height: 100% !important;
+    text-decoration: none !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    display: inline-block;
+}
+
+.color-view {
+    padding: 0 !important;
+}
+
+.color-demo a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 35px 0px;
+    text-decoration: none;
+}
+
+.search-user-name{
+    width: 80% !important;
+}
+
+.btn-search-user{
+    padding: 9px 5px !important;
+    margin: 0px 0px !important;
+    font-size: 12px !important;
+    width:20% !important;
+}
+
+
+.table-a{
+    text-decoration: none !important;
+}
+
+.critical{
+    color: red;
+    font-weight: bold;
+}
+
+.critical:hover{
+    color: red;
+}
+
+.span_status{
+    text-align: center;
+}
+
+.table-list tbody tr td{
+    vertical-align: middle !important;
+}
+
+.table-panel {
+    min-width: 150px;
+}
+
+#artwork_photos_table td a.tabledrag-handle {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    cursor: move;
+    float: left;
+    margin-left: -0.6em;
+    overflow: hidden;
+    text-decoration: none;
+    margin-top: 15px;
+}
+#artwork_photos_table td .mscn-img {
+    display: inline-block;
+}
+#artwork_photos_table td .mscn-dtl {
+    display: inline-block;
+}

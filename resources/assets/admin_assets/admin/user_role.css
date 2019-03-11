@@ -1,0 +1,53 @@
+#user_list_length, #user_list_info{
+    display: none;
+}
+
+.department_color0{
+    background-color: #e1e5ec;
+    color: #666;
+}
+
+.department_color1{
+    background-color: #e7505a;
+    color: white;
+}
+
+.department_color2{
+    background-color: #3598dc;
+    color: white;
+}
+
+.department_color3{
+    background-color: #32c5d2;
+    color: white;
+}
+
+.department_color4{
+    background-color: #26C281;
+    color: white;
+}
+
+.department_color5{
+    background-color: #8E44AD;
+    color: white;
+}
+
+.department_color6{
+    background-color: #E87E04;
+    color: white;
+}
+
+.department_color7{
+    background-color: #36D7B7;
+    color: white;
+}
+
+.status_color0{
+    background-color: #e7505a;
+    color: white;
+}
+
+.status_color1{
+    background-color: #3598dc;
+    color: white;
+}

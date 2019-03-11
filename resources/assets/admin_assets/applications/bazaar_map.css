@@ -1,0 +1,10 @@
+.rsf-map-container {
+    position: relative;
+    min-height: 320px;
+    min-width: 320px;
+    display: inline-block;
+}
+
+.rsf-map-container .marker {
+    position: absolute;
+}
