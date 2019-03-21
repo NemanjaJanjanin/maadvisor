@@ -27,7 +27,7 @@ class Cors
 
         $headers = [
             'Access-Control-Allow-Methods'=> 'POST, GET, OPTIONS, PUT, DELETE',
-            'Access-Control-Allow-Headers'=> 'Content-Type, X-Auth-Token, Origin, X-LBM'
+            'Access-Control-Allow-Headers'=> 'Content-Type, X-Auth-Token, Origin, X-MAA'
         ];
         if($request->getMethod() == "OPTIONS") {
             return Response::make('OK', 200, $headers);

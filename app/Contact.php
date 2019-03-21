@@ -56,6 +56,7 @@ class Attorney extends Model
 		'firm_type',
 		'firm_type_other',
 		'person_type',
+		'from_where',
 		'created_at',
 		'updated_at',
     ];

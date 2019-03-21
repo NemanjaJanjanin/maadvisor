@@ -158,13 +158,7 @@ class AdminController extends Controller
      */
     public function send_mail()
     {
-        $data = array('name'=>"Rokuro Yoshiki");
-          Mail::send('mail', $data, function($message) {
-             $message->to('rokuroyoshiki@gmail.com', 'Tutorials Point')->subject
-                ('Laravel HTML Testing Mail');
-             $message->from('donotreply@rainbowserpent.net','Rokuro Yoshiki');
-          });
-          echo "HTML Email Sent. Check your inbox.";
+
     }
 
     /**

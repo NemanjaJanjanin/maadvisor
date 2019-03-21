@@ -16,11 +16,11 @@ class checkHeader
      */
     public function handle($request, Closure $next)
     {
-        if(!isset($_SERVER['HTTP_X_LBM'])){
+        if(!isset($_SERVER['HTTP_X_MAA'])){
             return Response::json(array('error'=>'Please set custom header'));
         }
 
-        if($_SERVER['HTTP_X_LBM'] != '2*2wr)<w2Us#MaZ.'){
+        if($_SERVER['HTTP_X_MAA'] != '2*2wr)<w2Us#MaZ.'){
             return Response::json(array('error'=>'wrong custom header'));
         }
 

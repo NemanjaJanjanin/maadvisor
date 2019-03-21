@@ -20,8 +20,8 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 			serverSide: true,
 			ajax: {
 				url: 'http://localhost/maadvisor/api/get_contact_data',
-				// url: 'https://maadvisor.net/api/get_contact_data',
-				headers: {'X-LBM': '2*2wr)<w2Us#MaZ.'},
+				// url: 'http://maadvisor.us/api/get_contact_data',
+				headers: {'X-MAA': '2*2wr)<w2Us#MaZ.'},
 				type: 'POST',
 			},
 			columns: [

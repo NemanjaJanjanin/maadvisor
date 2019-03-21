@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: X-LBM');
+header('Access-Control-Allow-Headers: X-MAA');
 
 use Illuminate\Http\Request;
 
