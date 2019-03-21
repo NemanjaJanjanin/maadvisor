@@ -40,15 +40,22 @@ Route::middleware('admin')->group( function () {
 
   Route::get('/search_all',           'SearchAllController@index');
 
-  Route::get('/attorney_profile',     'AttorneyProfileController@showAddForm');
-  Route::get('/attorney_profile/{id}',     'AttorneyProfileController@index');
-  Route::post('/attorney_profile_update',   'AttorneyProfileController@update');
-  Route::post('/attorney_profile_add',   'AttorneyProfileController@store');
+  // Route::get('/attorney_profile',     'AttorneyProfileController@showAddForm');
+  // Route::get('/attorney_profile/{id}',     'AttorneyProfileController@index');
+  // Route::post('/attorney_profile_update',   'AttorneyProfileController@update');
+  // Route::post('/attorney_profile_add',   'AttorneyProfileController@store');
+  //
+  // Route::get('/user_role',                 'UserRoleController@show');
+  // Route::get('/user_add_new',                 'UserRoleController@showAddForm');
+  // Route::post('/user_role/set_department', 'UserRoleController@setDepartment');
+  // Route::post('/user_role/set_user_status', 'UserRoleController@setUserStatus');
+  // Route::post('/user_role/set_user_role', 'UserRoleController@setUserRole');
+  // Route::post('/user_role/set_app_stages', 'UserRoleController@setAppStage');
 
-  Route::get('/user_role',                 'UserRoleController@show');
-  Route::get('/user_add_new',                 'UserRoleController@showAddForm');
-  Route::post('/user_role/set_department', 'UserRoleController@setDepartment');
-  Route::post('/user_role/set_user_status', 'UserRoleController@setUserStatus');
-  Route::post('/user_role/set_user_role', 'UserRoleController@setUserRole');
-  Route::post('/user_role/set_app_stages', 'UserRoleController@setAppStage');
+  Route::get('/update_sync/cvent',           'UpdateSyncCventController@index');
+
+  Route::get('/update_sync/openwater',                'UpdateSyncOpenWaterController@index');
+  Route::post('/update_sync/openwater_sync_csv',      'UpdateSyncOpenWaterController@SyncOpenWaterContactData');
+
+  Route::get('/update_sync/zoho',            'UpdateSyncZohoController@index');
 });

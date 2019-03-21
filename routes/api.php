@@ -14,13 +14,10 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-//
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
 
 Route::middleware('checkHeader')->group( function () {
-    Route::post('get_contact_data',    'api\DataController@getContactDataSet');
+    Route::post('get_contact_data',                'api\DataController@getContactDataSet');
+    Route::post('get_openwater_contact_data',      'api\DataController@getOpenWaterContactData');
 });
 
 Route::middleware('auth:api')->group( function () {

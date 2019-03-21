@@ -102,4 +102,39 @@ class DataController extends BaseController
         }
     }
 
+    public function getOpenWaterContactData(Request $request){
+
+        $input = $request->all();
+
+        $total_count = DB::table('contact')->count();
+
+        $order = $input['order'][0];
+        $column = $this->columns[$order['column']];
+        $sort = $order['dir'];
+
+
+        $sql = sprintf(
+                "SELECT c.email_address,
+                        c.first_name,
+                        c.last_name,
+                        c.company_name,
+                        c.title,
+                        c.mobile_phone
+                FROM    contact c
+                WHERE   from_where = 2
+                ORDER BY c.%s %s
+                LIMIT %s, %s",
+                $column, $sort,
+                $input['start'], $input['length']
+            );
+
+        $contact_data = DB::select($sql);
+        $filtered_count = count($contact_data);
+
+        if ($filtered_count == 0){
+            return $this->sendAjaxDataResponse(json_decode(json_encode($contact_data)), $total_count, $total_count, 'No Data', $input);
+        }else{
+            return $this->sendAjaxDataResponse(json_decode(json_encode($contact_data)), $total_count, $total_count, 'Contact Data', $input);
+        }
+    }
 }

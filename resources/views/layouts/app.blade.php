@@ -85,7 +85,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--RTL version:<link href="{{ asset('resources/assets/admin_assets/') }}/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
 
 		<!--end::Page Vendors Styles -->
-		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="shortcut icon" href="{{ url('/') }}/favicon.png" />
 		@yield('other_css')
 	</head>
 
@@ -107,7 +107,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="m-stack m-stack--ver m-stack--general">
 								<div class="m-stack__item m-stack__item--middle m-brand__logo">
 									<a href="{{ url('home') }}" class="m-brand__logo-wrapper">
-										<img alt="" src="logo.png" width="120"/>
+										<img alt="" src="{{ url('/') }}/logo.png" width="120"/>
 									</a>
 								</div>
 								<div class="m-stack__item m-stack__item--middle m-brand__tools">
@@ -241,27 +241,28 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="m-menu__submenu "><span class="m-menu__arrow"></span>
 									<ul class="m-menu__subnav">
 										<li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"><span class="m-menu__link"><span class="m-menu__link-text">Database</span></span></li>
-										<li class="m-menu__item " aria-haspopup="true"><a href="{{ url('search_all') }}" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">All Contact</span></a></li>
+										<li class="m-menu__item " aria-haspopup="true"><a href="{{ url('search_all') }}" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">All Contact Data</span></a></li>
 									</ul>
 								</div>
 							</li>
-							{{-- <li class="m-menu__section ">
+							<li class="m-menu__section ">
 								<h4 class="m-menu__section-text">Administration</h4>
 								<i class="m-menu__section-icon flaticon-more-v2"></i>
 							</li>
 							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
 								<a href="javascript:;" class="m-menu__link m-menu__toggle">
-									<i class="m-menu__link-icon flaticon-user"></i><span class="m-menu__link-text">User</span>
+									<i class="m-menu__link-icon flaticon-user"></i><span class="m-menu__link-text">Update & Sync</span>
 									<i class="m-menu__ver-arrow la la-angle-right"></i>
 								</a>
 								<div class="m-menu__submenu "><span class="m-menu__arrow"></span>
 									<ul class="m-menu__subnav">
-										<li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"><span class="m-menu__link"><span class="m-menu__link-text">User Role</span></span></li>
-										<li class="m-menu__item " aria-haspopup="true"><a href="{{ url('user_add_new') }}" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Add New User</span></a></li>
-										<li class="m-menu__item " aria-haspopup="true"><a href="{{ url('user_role') }}" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">User Role</span></a></li>
+										<li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"><span class="m-menu__link"><span class="m-menu__link-text">Update & Sync</span></span></li>
+										<li class="m-menu__item " aria-haspopup="true"><a href="{{ url('update_sync/cvent') }}" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Cvent</span></a></li>
+										<li class="m-menu__item " aria-haspopup="true"><a href="{{ url('update_sync/openwater') }}" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">OpenWater</span></a></li>
+										<li class="m-menu__item " aria-haspopup="true"><a href="{{ url('update_sync/zoho') }}" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Zoho</span></a></li>
 									</ul>
 								</div>
-							</li> --}}
+							</li>
 						</ul>
 					</div>
 
