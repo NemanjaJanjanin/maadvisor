@@ -251,7 +251,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
 								<a href="javascript:;" class="m-menu__link m-menu__toggle">
-									<i class="m-menu__link-icon flaticon-user"></i><span class="m-menu__link-text">Update & Sync</span>
+									<i class="m-menu__link-icon flaticon-refresh"></i><span class="m-menu__link-text">Update & Sync</span>
 									<i class="m-menu__ver-arrow la la-angle-right"></i>
 								</a>
 								<div class="m-menu__submenu "><span class="m-menu__arrow"></span>

@@ -106,7 +106,11 @@ class DataController extends BaseController
 
         $input = $request->all();
 
-        $total_count = DB::table('contact')->count();
+        $sql =  "SELECT COUNT(*) total_count
+                FROM    contact c
+                WHERE   from_where = 2";
+        $count_data = DB::select($sql);
+        $total_count = $count_data[0]->total_count;
 
         $order = $input['order'][0];
         $column = $this->columns[$order['column']];

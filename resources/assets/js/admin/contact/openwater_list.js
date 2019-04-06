@@ -19,8 +19,8 @@ var DatatablesSearchOptionsAdvancedSearch = function() {
 			processing: true,
 			serverSide: true,
 			ajax: {
-				// url: 'http://localhost/maadvisor/api/get_openwater_contact_data',
-				url: 'http://maadvisor.us/api/get_openwater_contact_data',
+				url: 'http://localhost/maadvisor/api/get_openwater_contact_data',
+				// url: 'http://maadvisor.us/api/get_openwater_contact_data',
 				headers: {'X-MAA': '2*2wr)<w2Us#MaZ.'},
 				type: 'POST',
 			},
